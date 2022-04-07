@@ -1,0 +1,2674 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20213.21.0917.1006                               -->
+<workbook original-version='18.1' source-build='2021.3.1 (20213.21.0917.1006)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Page    1 Table  1++ (Airtable+-+Layoffs.fyi+Tracker+(layoffs.fyi_tracker))' inline='true' name='federated.02ygv7u05gi9bh16rjnrz1sbzbfw' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Airtable+-+Layoffs.fyi+Tracker+(layoffs.fyi_tracker)' name='pdf.08zyasv0imz0te1cgod2y0qt4ndn'>
+            <connection class='pdf' cleaning='no' compat='no' dataRefreshTime='' directory='' interpretationMode='257' origfilename='C:/Users/shrvs/Dropbox/My PC (DESKTOP-8QEN81C)/Downloads/Airtable+-+Layoffs.fyi+Tracker+(layoffs.fyi_tracker).pdf' password='' pgFrom='' pgTo='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation type='project'>
+          <columns>
+            <column caption='Company Name' hidden='true' name='[Page    1 Table  1+].[F2]' />
+            <column caption='Company' hidden='true' name='[Page    1 Table  1+].[Company]' />
+            <column name='[Project].[Company &amp; Company Name]' project-type='coalesce' />
+          </columns>
+          <bindings>
+            <binding expression='IF NOT ISNULL([Page    1 Table  1+].[F2]) THEN [Page    1 Table  1+].[F2]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[Company]) THEN [Page    1 Table  1+].[Company]&#10;ELSE NULL&#10;END' name='[Project].[Company &amp; Company Name]' />
+          </bindings>
+          <relation type='project'>
+            <columns>
+              <column caption='Location' hidden='true' name='[Page    1 Table  1+].[F3]' />
+              <column caption='Location #' hidden='true' name='[Page    1 Table  1+].[Location #]' />
+              <column caption='Location # L' hidden='true' name='[Page    1 Table  1+].[Location # L]' />
+              <column caption='Location # La' hidden='true' name='[Page    1 Table  1+].[Location # La]' />
+              <column caption='Location # Laid' hidden='true' name='[Page    1 Table  1+].[Location # Laid]' />
+              <column caption='Location' hidden='true' name='[Page    1 Table  1+].[Location]' />
+              <column name='[Project].[Location, Location #, Location # L and 3 more]' project-type='coalesce' />
+            </columns>
+            <bindings>
+              <binding expression='IF NOT ISNULL([Page    1 Table  1+].[F3]) THEN [Page    1 Table  1+].[F3]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[Location #]) THEN [Page    1 Table  1+].[Location #]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[Location # L]) THEN [Page    1 Table  1+].[Location # L]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[Location # La]) THEN [Page    1 Table  1+].[Location # La]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[Location # Laid]) THEN [Page    1 Table  1+].[Location # Laid]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[Location]) THEN [Page    1 Table  1+].[Location]&#10;ELSE NULL&#10;END' name='[Project].[Location, Location #, Location # L and 3 more]' />
+            </bindings>
+            <relation type='project'>
+              <columns>
+                <column caption='#Laid Off' hidden='true' name='[Page    1 Table  1+].[F4]' />
+                <column caption='#' hidden='true' name='[Page    1 Table  1+].[#]' />
+                <column caption='Laid Off' hidden='true' name='[Page    1 Table  1+].[Laid Off]' />
+                <column caption='aid Off' hidden='true' name='[Page    1 Table  1+].[aid Off]' />
+                <column caption='id Off' hidden='true' name='[Page    1 Table  1+].[id Off]' />
+                <column caption='Off' hidden='true' name='[Page    1 Table  1+].[Off]' />
+                <column caption='# Laid' hidden='true' name='[Page    1 Table  1+].[# Laid]' />
+                <column name='[Project].[#Laid Off, #, Laid Off and 4 more]' project-type='coalesce' />
+                <column datatype='integer' name='#Laid Off, #, Laid Off and 4 more' ordinal='3' />
+              </columns>
+              <bindings>
+                <binding expression='IF NOT ISNULL([Page    1 Table  1+].[F4]) THEN [Page    1 Table  1+].[F4]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[#]) THEN [Page    1 Table  1+].[#]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[Laid Off]) THEN [Page    1 Table  1+].[Laid Off]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[aid Off]) THEN [Page    1 Table  1+].[aid Off]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[id Off]) THEN [Page    1 Table  1+].[id Off]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[Off]) THEN [Page    1 Table  1+].[Off]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[# Laid]) THEN [Page    1 Table  1+].[# Laid]&#10;ELSE NULL&#10;END' name='[Project].[#Laid Off, #, Laid Off and 4 more]' />
+              </bindings>
+              <relation type='project'>
+                <columns>
+                  <column caption='Date' hidden='true' name='[Page    1 Table  1+].[F5]' />
+                  <column caption='Date' hidden='true' name='[Page    1 Table  1+].[Date]' />
+                  <column name='[Project].[Date &amp; Date]' project-type='coalesce' />
+                  <column datatype='date' date-parse-format='MM/dd/yyyy' name='Date &amp; Date' ordinal='4' />
+                </columns>
+                <bindings>
+                  <binding expression='IF NOT ISNULL([Page    1 Table  1+].[F5]) THEN [Page    1 Table  1+].[F5]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[Date]) THEN [Page    1 Table  1+].[Date]&#10;ELSE NULL&#10;END' name='[Project].[Date &amp; Date]' />
+                </bindings>
+                <relation type='project'>
+                  <columns>
+                    <column caption='%' hidden='true' name='[Page    1 Table  1+].[F6]' />
+                    <column caption='%' hidden='true' name='[Page    1 Table  1+].[%]' />
+                    <column name='[Project].[% &amp; %]' project-type='coalesce' />
+                    <column datatype='real' name='% &amp; %' ordinal='5' />
+                  </columns>
+                  <bindings>
+                    <binding expression='IF NOT ISNULL([Page    1 Table  1+].[F6]) THEN [Page    1 Table  1+].[F6]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[%]) THEN [Page    1 Table  1+].[%]&#10;ELSE NULL&#10;END' name='[Project].[% &amp; %]' />
+                  </bindings>
+                  <relation type='project'>
+                    <columns>
+                      <column caption='Industry' hidden='true' name='[Page    1 Table  1+].[F7]' />
+                      <column caption='Industry' hidden='true' name='[Page    1 Table  1+].[Industry]' />
+                      <column name='[Project].[Industry &amp; Industry]' project-type='coalesce' />
+                    </columns>
+                    <bindings>
+                      <binding expression='IF NOT ISNULL([Page    1 Table  1+].[F7]) THEN [Page    1 Table  1+].[F7]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[Industry]) THEN [Page    1 Table  1+].[Industry]&#10;ELSE NULL&#10;END' name='[Project].[Industry &amp; Industry]' />
+                    </bindings>
+                    <relation all='true' name='Page    1 Table  1+' type='union'>
+                      <columns>
+                        <column datatype='string' name='F1' />
+                        <column datatype='string' name='F2' />
+                        <column datatype='string' name='F3' />
+                        <column datatype='string' name='F4' />
+                        <column datatype='string' name='F5' />
+                        <column datatype='string' name='F6' />
+                        <column datatype='string' name='F7' />
+                        <column datatype='string' name='#' />
+                        <column datatype='string' name='Company' />
+                        <column datatype='string' name='Location #' />
+                        <column datatype='string' name='Laid Off' />
+                        <column datatype='string' name='Date' />
+                        <column datatype='string' name='%' />
+                        <column datatype='string' name='Industry' />
+                        <column datatype='string' name='Location # L' />
+                        <column datatype='string' name='aid Off' />
+                        <column datatype='string' name='Location # La' />
+                        <column datatype='string' name='id Off' />
+                        <column datatype='string' name='Location # Laid' />
+                        <column datatype='string' name='Off' />
+                        <column datatype='string' name='Location' />
+                        <column datatype='string' name='# Laid' />
+                        <column datatype='string' name='F9' />
+                        <column datatype='string' name='Table Name' />
+                      </columns>
+                      <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page    1 Table  1' table='[&apos;Page    1 Table  1$&apos;]' type='table'>
+                        <columns gridOrigin='A1:G24:no:A1:G24:0' header='no' outcome='2'>
+                          <column datatype='string' name='F1' ordinal='0' />
+                          <column datatype='string' name='F2' ordinal='1' />
+                          <column datatype='string' name='F3' ordinal='2' />
+                          <column datatype='string' name='F4' ordinal='3' />
+                          <column datatype='string' name='F5' ordinal='4' />
+                          <column datatype='string' name='F6' ordinal='5' />
+                          <column datatype='string' name='F7' ordinal='6' />
+                        </columns>
+                      </relation>
+                      <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page    2 Table  1' table='[&apos;Page    2 Table  1$&apos;]' type='table'>
+                        <columns gridOrigin='A1:G25:no:A1:G25:0' header='no' outcome='2'>
+                          <column datatype='string' name='F1' ordinal='0' />
+                          <column datatype='string' name='F2' ordinal='1' />
+                          <column datatype='string' name='F3' ordinal='2' />
+                          <column datatype='string' name='F4' ordinal='3' />
+                          <column datatype='string' name='F5' ordinal='4' />
+                          <column datatype='string' name='F6' ordinal='5' />
+                          <column datatype='string' name='F7' ordinal='6' />
+                        </columns>
+                      </relation>
+                      <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page    3 Table  1' table='[&apos;Page    3 Table  1$&apos;]' type='table'>
+                        <columns gridOrigin='A1:G25:no:A1:G25:0' header='no' outcome='2'>
+                          <column datatype='string' name='F1' ordinal='0' />
+                          <column datatype='string' name='F2' ordinal='1' />
+                          <column datatype='string' name='F3' ordinal='2' />
+                          <column datatype='string' name='F4' ordinal='3' />
+                          <column datatype='string' name='F5' ordinal='4' />
+                          <column datatype='string' name='F6' ordinal='5' />
+                          <column datatype='string' name='F7' ordinal='6' />
+                        </columns>
+                      </relation>
+                      <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page    4 Table  1' table='[&apos;Page    4 Table  1$&apos;]' type='table'>
+                        <columns gridOrigin='A1:G25:no:A1:G25:0' header='no' outcome='2'>
+                          <column datatype='string' name='F1' ordinal='0' />
+                          <column datatype='string' name='F2' ordinal='1' />
+                          <column datatype='string' name='F3' ordinal='2' />
+                          <column datatype='string' name='F4' ordinal='3' />
+                          <column datatype='string' name='F5' ordinal='4' />
+                          <column datatype='string' name='F6' ordinal='5' />
+                          <column datatype='string' name='F7' ordinal='6' />
+                        </columns>
+                      </relation>
+                      <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page    5 Table  1' table='[&apos;Page    5 Table  1$&apos;]' type='table'>
+                        <columns gridOrigin='A1:G25:no:A1:G25:0' header='no' outcome='2'>
+                          <column datatype='string' name='F1' ordinal='0' />
+                          <column datatype='string' name='F2' ordinal='1' />
+                          <column datatype='string' name='F3' ordinal='2' />
+                          <column datatype='string' name='F4' ordinal='3' />
+                          <column datatype='string' name='F5' ordinal='4' />
+                          <column datatype='string' name='F6' ordinal='5' />
+                          <column datatype='string' name='F7' ordinal='6' />
+                        </columns>
+                      </relation>
+                      <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page    6 Table  1' table='[&apos;Page    6 Table  1$&apos;]' type='table'>
+                        <columns gridOrigin='A1:G25:no:A1:G25:0' header='no' outcome='2'>
+                          <column datatype='string' name='F1' ordinal='0' />
+                          <column datatype='string' name='F2' ordinal='1' />
+                          <column datatype='string' name='F3' ordinal='2' />
+                          <column datatype='string' name='F4' ordinal='3' />
+                          <column datatype='string' name='F5' ordinal='4' />
+                          <column datatype='string' name='F6' ordinal='5' />
+                          <column datatype='string' name='F7' ordinal='6' />
+                        </columns>
+                      </relation>
+                      <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page    7 Table  1' table='[&apos;Page    7 Table  1$&apos;]' type='table'>
+                        <columns gridOrigin='A1:G25:no:A1:G25:0' header='no' outcome='2'>
+                          <column datatype='string' name='F1' ordinal='0' />
+                          <column datatype='string' name='F2' ordinal='1' />
+                          <column datatype='string' name='F3' ordinal='2' />
+                          <column datatype='string' name='F4' ordinal='3' />
+                          <column datatype='string' name='F5' ordinal='4' />
+                          <column datatype='string' name='F6' ordinal='5' />
+                          <column datatype='string' name='F7' ordinal='6' />
+                        </columns>
+                      </relation>
+                      <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page    8 Table  1' table='[&apos;Page    8 Table  1$&apos;]' type='table'>
+                        <columns gridOrigin='A1:G25:no:A1:G25:0' header='no' outcome='2'>
+                          <column datatype='string' name='F1' ordinal='0' />
+                          <column datatype='string' name='F2' ordinal='1' />
+                          <column datatype='string' name='F3' ordinal='2' />
+                          <column datatype='string' name='F4' ordinal='3' />
+                          <column datatype='string' name='F5' ordinal='4' />
+                          <column datatype='string' name='F6' ordinal='5' />
+                          <column datatype='string' name='F7' ordinal='6' />
+                        </columns>
+                      </relation>
+                      <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page    9 Table  1' table='[&apos;Page    9 Table  1$&apos;]' type='table'>
+                        <columns gridOrigin='A1:G25:no:A1:G25:0' header='no' outcome='2'>
+                          <column datatype='string' name='F1' ordinal='0' />
+                          <column datatype='string' name='F2' ordinal='1' />
+                          <column datatype='string' name='F3' ordinal='2' />
+                          <column datatype='string' name='F4' ordinal='3' />
+                          <column datatype='string' name='F5' ordinal='4' />
+                          <column datatype='string' name='F6' ordinal='5' />
+                          <column datatype='string' name='F7' ordinal='6' />
+                        </columns>
+                      </relation>
+                      <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page   10 Table  1' table='[&apos;Page   10 Table  1$&apos;]' type='table'>
+                        <columns gridOrigin='A1:G25:no:A1:G25:0' header='no' outcome='2'>
+                          <column datatype='string' name='F1' ordinal='0' />
+                          <column datatype='string' name='F2' ordinal='1' />
+                          <column datatype='string' name='F3' ordinal='2' />
+                          <column datatype='string' name='F4' ordinal='3' />
+                          <column datatype='string' name='F5' ordinal='4' />
+                          <column datatype='string' name='F6' ordinal='5' />
+                          <column datatype='string' name='F7' ordinal='6' />
+                        </columns>
+                      </relation>
+                      <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page   11 Table  1' table='[&apos;Page   11 Table  1$&apos;]' type='table'>
+                        <columns gridOrigin='A1:G25:no:A1:G25:0' header='no' outcome='2'>
+                          <column datatype='string' name='F1' ordinal='0' />
+                          <column datatype='string' name='F2' ordinal='1' />
+                          <column datatype='string' name='F3' ordinal='2' />
+                          <column datatype='string' name='F4' ordinal='3' />
+                          <column datatype='string' name='F5' ordinal='4' />
+                          <column datatype='string' name='F6' ordinal='5' />
+                          <column datatype='string' name='F7' ordinal='6' />
+                        </columns>
+                      </relation>
+                      <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page   12 Table  1' table='[&apos;Page   12 Table  1$&apos;]' type='table'>
+                        <columns gridOrigin='A1:G26:no:A1:G26:0' header='yes' outcome='2'>
+                          <column datatype='string' name='#' ordinal='0' />
+                          <column datatype='string' name='Company' ordinal='1' />
+                          <column datatype='string' name='Location #' ordinal='2' />
+                          <column datatype='string' name='Laid Off' ordinal='3' />
+                          <column datatype='string' name='Date' ordinal='4' />
+                          <column datatype='string' name='%' ordinal='5' />
+                          <column datatype='string' name='Industry' ordinal='6' />
+                        </columns>
+                      </relation>
+                      <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page   13 Table  1' table='[&apos;Page   13 Table  1$&apos;]' type='table'>
+                        <columns gridOrigin='A1:G26:no:A1:G26:0' header='yes' outcome='2'>
+                          <column datatype='string' name='#' ordinal='0' />
+                          <column datatype='string' name='Company' ordinal='1' />
+                          <column datatype='string' name='Location #' ordinal='2' />
+                          <column datatype='string' name='Laid Off' ordinal='3' />
+                          <column datatype='string' name='Date' ordinal='4' />
+                          <column datatype='string' name='%' ordinal='5' />
+                          <column datatype='string' name='Industry' ordinal='6' />
+                        </columns>
+                      </relation>
+                      <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page   14 Table  1' table='[&apos;Page   14 Table  1$&apos;]' type='table'>
+                        <columns gridOrigin='A1:G26:no:A1:G26:0' header='yes' outcome='2'>
+                          <column datatype='string' name='#' ordinal='0' />
+                          <column datatype='string' name='Company' ordinal='1' />
+                          <column datatype='string' name='Location # L' ordinal='2' />
+                          <column datatype='string' name='aid Off' ordinal='3' />
+                          <column datatype='string' name='Date' ordinal='4' />
+                          <column datatype='string' name='%' ordinal='5' />
+                          <column datatype='string' name='Industry' ordinal='6' />
+                        </columns>
+                      </relation>
+                      <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page   15 Table  1' table='[&apos;Page   15 Table  1$&apos;]' type='table'>
+                        <columns gridOrigin='A1:G26:no:A1:G26:0' header='yes' outcome='2'>
+                          <column datatype='string' name='#' ordinal='0' />
+                          <column datatype='string' name='Company' ordinal='1' />
+                          <column datatype='string' name='Location # L' ordinal='2' />
+                          <column datatype='string' name='aid Off' ordinal='3' />
+                          <column datatype='string' name='Date' ordinal='4' />
+                          <column datatype='string' name='%' ordinal='5' />
+                          <column datatype='string' name='Industry' ordinal='6' />
+                        </columns>
+                      </relation>
+                      <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page   16 Table  1' table='[&apos;Page   16 Table  1$&apos;]' type='table'>
+                        <columns gridOrigin='A1:G25:no:A1:G25:0' header='no' outcome='2'>
+                          <column datatype='string' name='F1' ordinal='0' />
+                          <column datatype='string' name='F2' ordinal='1' />
+                          <column datatype='string' name='F3' ordinal='2' />
+                          <column datatype='string' name='F4' ordinal='3' />
+                          <column datatype='string' name='F5' ordinal='4' />
+                          <column datatype='string' name='F6' ordinal='5' />
+                          <column datatype='string' name='F7' ordinal='6' />
+                        </columns>
+                      </relation>
+                      <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page   17 Table  1' table='[&apos;Page   17 Table  1$&apos;]' type='table'>
+                        <columns gridOrigin='A1:G26:no:A1:G26:0' header='yes' outcome='2'>
+                          <column datatype='string' name='#' ordinal='0' />
+                          <column datatype='string' name='Company' ordinal='1' />
+                          <column datatype='string' name='Location # La' ordinal='2' />
+                          <column datatype='string' name='id Off' ordinal='3' />
+                          <column datatype='string' name='Date' ordinal='4' />
+                          <column datatype='string' name='%' ordinal='5' />
+                          <column datatype='string' name='Industry' ordinal='6' />
+                        </columns>
+                      </relation>
+                      <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page   18 Table  1' table='[&apos;Page   18 Table  1$&apos;]' type='table'>
+                        <columns gridOrigin='A1:G25:no:A1:G25:0' header='no' outcome='2'>
+                          <column datatype='string' name='F1' ordinal='0' />
+                          <column datatype='string' name='F2' ordinal='1' />
+                          <column datatype='string' name='F3' ordinal='2' />
+                          <column datatype='string' name='F4' ordinal='3' />
+                          <column datatype='string' name='F5' ordinal='4' />
+                          <column datatype='string' name='F6' ordinal='5' />
+                          <column datatype='string' name='F7' ordinal='6' />
+                        </columns>
+                      </relation>
+                      <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page   19 Table  1' table='[&apos;Page   19 Table  1$&apos;]' type='table'>
+                        <columns gridOrigin='A1:G26:no:A1:G26:0' header='yes' outcome='2'>
+                          <column datatype='string' name='#' ordinal='0' />
+                          <column datatype='string' name='Company' ordinal='1' />
+                          <column datatype='string' name='Location # Laid' ordinal='2' />
+                          <column datatype='string' name='Off' ordinal='3' />
+                          <column datatype='string' name='Date' ordinal='4' />
+                          <column datatype='string' name='%' ordinal='5' />
+                          <column datatype='string' name='Industry' ordinal='6' />
+                        </columns>
+                      </relation>
+                      <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page   20 Table  1' table='[&apos;Page   20 Table  1$&apos;]' type='table'>
+                        <columns gridOrigin='A1:G25:no:A1:G25:0' header='no' outcome='2'>
+                          <column datatype='string' name='F1' ordinal='0' />
+                          <column datatype='string' name='F2' ordinal='1' />
+                          <column datatype='string' name='F3' ordinal='2' />
+                          <column datatype='string' name='F4' ordinal='3' />
+                          <column datatype='string' name='F5' ordinal='4' />
+                          <column datatype='string' name='F6' ordinal='5' />
+                          <column datatype='string' name='F7' ordinal='6' />
+                        </columns>
+                      </relation>
+                      <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page   21 Table  1' table='[&apos;Page   21 Table  1$&apos;]' type='table'>
+                        <columns gridOrigin='A1:G25:no:A1:G25:0' header='no' outcome='2'>
+                          <column datatype='string' name='F1' ordinal='0' />
+                          <column datatype='string' name='F2' ordinal='1' />
+                          <column datatype='string' name='F3' ordinal='2' />
+                          <column datatype='string' name='F4' ordinal='3' />
+                          <column datatype='string' name='F5' ordinal='4' />
+                          <column datatype='string' name='F6' ordinal='5' />
+                          <column datatype='string' name='F7' ordinal='6' />
+                        </columns>
+                      </relation>
+                      <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page   22 Table  1' table='[&apos;Page   22 Table  1$&apos;]' type='table'>
+                        <columns gridOrigin='A1:J6:no:A1:J6:0' header='yes' outcome='2'>
+                          <column datatype='string' name='#' ordinal='0' />
+                          <column datatype='string' name='Company' ordinal='1' />
+                          <column datatype='string' name='F3' ordinal='2' />
+                          <column datatype='string' name='Location' ordinal='3' />
+                          <column datatype='string' name='# Laid' ordinal='4' />
+                          <column datatype='string' name='Off' ordinal='5' />
+                          <column datatype='string' name='Date' ordinal='6' />
+                          <column datatype='string' name='%' ordinal='7' />
+                          <column datatype='string' name='F9' ordinal='8' />
+                          <column datatype='string' name='Industry' ordinal='9' />
+                        </columns>
+                      </relation>
+                    </relation>
+                  </relation>
+                </relation>
+              </relation>
+            </relation>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='project'>
+          <columns>
+            <column caption='Company Name' hidden='true' name='[Page    1 Table  1+].[F2]' />
+            <column caption='Company' hidden='true' name='[Page    1 Table  1+].[Company]' />
+            <column name='[Project].[Company &amp; Company Name]' project-type='coalesce' />
+          </columns>
+          <bindings>
+            <binding expression='IF NOT ISNULL([Page    1 Table  1+].[F2]) THEN [Page    1 Table  1+].[F2]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[Company]) THEN [Page    1 Table  1+].[Company]&#10;ELSE NULL&#10;END' name='[Project].[Company &amp; Company Name]' />
+          </bindings>
+          <relation type='project'>
+            <columns>
+              <column caption='Location' hidden='true' name='[Page    1 Table  1+].[F3]' />
+              <column caption='Location #' hidden='true' name='[Page    1 Table  1+].[Location #]' />
+              <column caption='Location # L' hidden='true' name='[Page    1 Table  1+].[Location # L]' />
+              <column caption='Location # La' hidden='true' name='[Page    1 Table  1+].[Location # La]' />
+              <column caption='Location # Laid' hidden='true' name='[Page    1 Table  1+].[Location # Laid]' />
+              <column caption='Location' hidden='true' name='[Page    1 Table  1+].[Location]' />
+              <column name='[Project].[Location, Location #, Location # L and 3 more]' project-type='coalesce' />
+            </columns>
+            <bindings>
+              <binding expression='IF NOT ISNULL([Page    1 Table  1+].[F3]) THEN [Page    1 Table  1+].[F3]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[Location #]) THEN [Page    1 Table  1+].[Location #]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[Location # L]) THEN [Page    1 Table  1+].[Location # L]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[Location # La]) THEN [Page    1 Table  1+].[Location # La]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[Location # Laid]) THEN [Page    1 Table  1+].[Location # Laid]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[Location]) THEN [Page    1 Table  1+].[Location]&#10;ELSE NULL&#10;END' name='[Project].[Location, Location #, Location # L and 3 more]' />
+            </bindings>
+            <relation type='project'>
+              <columns>
+                <column caption='#Laid Off' hidden='true' name='[Page    1 Table  1+].[F4]' />
+                <column caption='#' hidden='true' name='[Page    1 Table  1+].[#]' />
+                <column caption='Laid Off' hidden='true' name='[Page    1 Table  1+].[Laid Off]' />
+                <column caption='aid Off' hidden='true' name='[Page    1 Table  1+].[aid Off]' />
+                <column caption='id Off' hidden='true' name='[Page    1 Table  1+].[id Off]' />
+                <column caption='Off' hidden='true' name='[Page    1 Table  1+].[Off]' />
+                <column caption='# Laid' hidden='true' name='[Page    1 Table  1+].[# Laid]' />
+                <column name='[Project].[#Laid Off, #, Laid Off and 4 more]' project-type='coalesce' />
+                <column datatype='integer' name='#Laid Off, #, Laid Off and 4 more' ordinal='3' />
+              </columns>
+              <bindings>
+                <binding expression='IF NOT ISNULL([Page    1 Table  1+].[F4]) THEN [Page    1 Table  1+].[F4]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[#]) THEN [Page    1 Table  1+].[#]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[Laid Off]) THEN [Page    1 Table  1+].[Laid Off]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[aid Off]) THEN [Page    1 Table  1+].[aid Off]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[id Off]) THEN [Page    1 Table  1+].[id Off]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[Off]) THEN [Page    1 Table  1+].[Off]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[# Laid]) THEN [Page    1 Table  1+].[# Laid]&#10;ELSE NULL&#10;END' name='[Project].[#Laid Off, #, Laid Off and 4 more]' />
+              </bindings>
+              <relation type='project'>
+                <columns>
+                  <column caption='Date' hidden='true' name='[Page    1 Table  1+].[F5]' />
+                  <column caption='Date' hidden='true' name='[Page    1 Table  1+].[Date]' />
+                  <column name='[Project].[Date &amp; Date]' project-type='coalesce' />
+                  <column datatype='date' date-parse-format='MM/dd/yyyy' name='Date &amp; Date' ordinal='4' />
+                </columns>
+                <bindings>
+                  <binding expression='IF NOT ISNULL([Page    1 Table  1+].[F5]) THEN [Page    1 Table  1+].[F5]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[Date]) THEN [Page    1 Table  1+].[Date]&#10;ELSE NULL&#10;END' name='[Project].[Date &amp; Date]' />
+                </bindings>
+                <relation type='project'>
+                  <columns>
+                    <column caption='%' hidden='true' name='[Page    1 Table  1+].[F6]' />
+                    <column caption='%' hidden='true' name='[Page    1 Table  1+].[%]' />
+                    <column name='[Project].[% &amp; %]' project-type='coalesce' />
+                    <column datatype='real' name='% &amp; %' ordinal='5' />
+                  </columns>
+                  <bindings>
+                    <binding expression='IF NOT ISNULL([Page    1 Table  1+].[F6]) THEN [Page    1 Table  1+].[F6]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[%]) THEN [Page    1 Table  1+].[%]&#10;ELSE NULL&#10;END' name='[Project].[% &amp; %]' />
+                  </bindings>
+                  <relation type='project'>
+                    <columns>
+                      <column caption='Industry' hidden='true' name='[Page    1 Table  1+].[F7]' />
+                      <column caption='Industry' hidden='true' name='[Page    1 Table  1+].[Industry]' />
+                      <column name='[Project].[Industry &amp; Industry]' project-type='coalesce' />
+                    </columns>
+                    <bindings>
+                      <binding expression='IF NOT ISNULL([Page    1 Table  1+].[F7]) THEN [Page    1 Table  1+].[F7]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[Industry]) THEN [Page    1 Table  1+].[Industry]&#10;ELSE NULL&#10;END' name='[Project].[Industry &amp; Industry]' />
+                    </bindings>
+                    <relation all='true' name='Page    1 Table  1+' type='union'>
+                      <columns>
+                        <column datatype='string' name='F1' />
+                        <column datatype='string' name='F2' />
+                        <column datatype='string' name='F3' />
+                        <column datatype='string' name='F4' />
+                        <column datatype='string' name='F5' />
+                        <column datatype='string' name='F6' />
+                        <column datatype='string' name='F7' />
+                        <column datatype='string' name='#' />
+                        <column datatype='string' name='Company' />
+                        <column datatype='string' name='Location #' />
+                        <column datatype='string' name='Laid Off' />
+                        <column datatype='string' name='Date' />
+                        <column datatype='string' name='%' />
+                        <column datatype='string' name='Industry' />
+                        <column datatype='string' name='Location # L' />
+                        <column datatype='string' name='aid Off' />
+                        <column datatype='string' name='Location # La' />
+                        <column datatype='string' name='id Off' />
+                        <column datatype='string' name='Location # Laid' />
+                        <column datatype='string' name='Off' />
+                        <column datatype='string' name='Location' />
+                        <column datatype='string' name='# Laid' />
+                        <column datatype='string' name='F9' />
+                        <column datatype='string' name='Table Name' />
+                      </columns>
+                      <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page    1 Table  1' table='[&apos;Page    1 Table  1$&apos;]' type='table'>
+                        <columns gridOrigin='A1:G24:no:A1:G24:0' header='no' outcome='2'>
+                          <column datatype='string' name='F1' ordinal='0' />
+                          <column datatype='string' name='F2' ordinal='1' />
+                          <column datatype='string' name='F3' ordinal='2' />
+                          <column datatype='string' name='F4' ordinal='3' />
+                          <column datatype='string' name='F5' ordinal='4' />
+                          <column datatype='string' name='F6' ordinal='5' />
+                          <column datatype='string' name='F7' ordinal='6' />
+                        </columns>
+                      </relation>
+                      <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page    2 Table  1' table='[&apos;Page    2 Table  1$&apos;]' type='table'>
+                        <columns gridOrigin='A1:G25:no:A1:G25:0' header='no' outcome='2'>
+                          <column datatype='string' name='F1' ordinal='0' />
+                          <column datatype='string' name='F2' ordinal='1' />
+                          <column datatype='string' name='F3' ordinal='2' />
+                          <column datatype='string' name='F4' ordinal='3' />
+                          <column datatype='string' name='F5' ordinal='4' />
+                          <column datatype='string' name='F6' ordinal='5' />
+                          <column datatype='string' name='F7' ordinal='6' />
+                        </columns>
+                      </relation>
+                      <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page    3 Table  1' table='[&apos;Page    3 Table  1$&apos;]' type='table'>
+                        <columns gridOrigin='A1:G25:no:A1:G25:0' header='no' outcome='2'>
+                          <column datatype='string' name='F1' ordinal='0' />
+                          <column datatype='string' name='F2' ordinal='1' />
+                          <column datatype='string' name='F3' ordinal='2' />
+                          <column datatype='string' name='F4' ordinal='3' />
+                          <column datatype='string' name='F5' ordinal='4' />
+                          <column datatype='string' name='F6' ordinal='5' />
+                          <column datatype='string' name='F7' ordinal='6' />
+                        </columns>
+                      </relation>
+                      <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page    4 Table  1' table='[&apos;Page    4 Table  1$&apos;]' type='table'>
+                        <columns gridOrigin='A1:G25:no:A1:G25:0' header='no' outcome='2'>
+                          <column datatype='string' name='F1' ordinal='0' />
+                          <column datatype='string' name='F2' ordinal='1' />
+                          <column datatype='string' name='F3' ordinal='2' />
+                          <column datatype='string' name='F4' ordinal='3' />
+                          <column datatype='string' name='F5' ordinal='4' />
+                          <column datatype='string' name='F6' ordinal='5' />
+                          <column datatype='string' name='F7' ordinal='6' />
+                        </columns>
+                      </relation>
+                      <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page    5 Table  1' table='[&apos;Page    5 Table  1$&apos;]' type='table'>
+                        <columns gridOrigin='A1:G25:no:A1:G25:0' header='no' outcome='2'>
+                          <column datatype='string' name='F1' ordinal='0' />
+                          <column datatype='string' name='F2' ordinal='1' />
+                          <column datatype='string' name='F3' ordinal='2' />
+                          <column datatype='string' name='F4' ordinal='3' />
+                          <column datatype='string' name='F5' ordinal='4' />
+                          <column datatype='string' name='F6' ordinal='5' />
+                          <column datatype='string' name='F7' ordinal='6' />
+                        </columns>
+                      </relation>
+                      <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page    6 Table  1' table='[&apos;Page    6 Table  1$&apos;]' type='table'>
+                        <columns gridOrigin='A1:G25:no:A1:G25:0' header='no' outcome='2'>
+                          <column datatype='string' name='F1' ordinal='0' />
+                          <column datatype='string' name='F2' ordinal='1' />
+                          <column datatype='string' name='F3' ordinal='2' />
+                          <column datatype='string' name='F4' ordinal='3' />
+                          <column datatype='string' name='F5' ordinal='4' />
+                          <column datatype='string' name='F6' ordinal='5' />
+                          <column datatype='string' name='F7' ordinal='6' />
+                        </columns>
+                      </relation>
+                      <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page    7 Table  1' table='[&apos;Page    7 Table  1$&apos;]' type='table'>
+                        <columns gridOrigin='A1:G25:no:A1:G25:0' header='no' outcome='2'>
+                          <column datatype='string' name='F1' ordinal='0' />
+                          <column datatype='string' name='F2' ordinal='1' />
+                          <column datatype='string' name='F3' ordinal='2' />
+                          <column datatype='string' name='F4' ordinal='3' />
+                          <column datatype='string' name='F5' ordinal='4' />
+                          <column datatype='string' name='F6' ordinal='5' />
+                          <column datatype='string' name='F7' ordinal='6' />
+                        </columns>
+                      </relation>
+                      <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page    8 Table  1' table='[&apos;Page    8 Table  1$&apos;]' type='table'>
+                        <columns gridOrigin='A1:G25:no:A1:G25:0' header='no' outcome='2'>
+                          <column datatype='string' name='F1' ordinal='0' />
+                          <column datatype='string' name='F2' ordinal='1' />
+                          <column datatype='string' name='F3' ordinal='2' />
+                          <column datatype='string' name='F4' ordinal='3' />
+                          <column datatype='string' name='F5' ordinal='4' />
+                          <column datatype='string' name='F6' ordinal='5' />
+                          <column datatype='string' name='F7' ordinal='6' />
+                        </columns>
+                      </relation>
+                      <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page    9 Table  1' table='[&apos;Page    9 Table  1$&apos;]' type='table'>
+                        <columns gridOrigin='A1:G25:no:A1:G25:0' header='no' outcome='2'>
+                          <column datatype='string' name='F1' ordinal='0' />
+                          <column datatype='string' name='F2' ordinal='1' />
+                          <column datatype='string' name='F3' ordinal='2' />
+                          <column datatype='string' name='F4' ordinal='3' />
+                          <column datatype='string' name='F5' ordinal='4' />
+                          <column datatype='string' name='F6' ordinal='5' />
+                          <column datatype='string' name='F7' ordinal='6' />
+                        </columns>
+                      </relation>
+                      <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page   10 Table  1' table='[&apos;Page   10 Table  1$&apos;]' type='table'>
+                        <columns gridOrigin='A1:G25:no:A1:G25:0' header='no' outcome='2'>
+                          <column datatype='string' name='F1' ordinal='0' />
+                          <column datatype='string' name='F2' ordinal='1' />
+                          <column datatype='string' name='F3' ordinal='2' />
+                          <column datatype='string' name='F4' ordinal='3' />
+                          <column datatype='string' name='F5' ordinal='4' />
+                          <column datatype='string' name='F6' ordinal='5' />
+                          <column datatype='string' name='F7' ordinal='6' />
+                        </columns>
+                      </relation>
+                      <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page   11 Table  1' table='[&apos;Page   11 Table  1$&apos;]' type='table'>
+                        <columns gridOrigin='A1:G25:no:A1:G25:0' header='no' outcome='2'>
+                          <column datatype='string' name='F1' ordinal='0' />
+                          <column datatype='string' name='F2' ordinal='1' />
+                          <column datatype='string' name='F3' ordinal='2' />
+                          <column datatype='string' name='F4' ordinal='3' />
+                          <column datatype='string' name='F5' ordinal='4' />
+                          <column datatype='string' name='F6' ordinal='5' />
+                          <column datatype='string' name='F7' ordinal='6' />
+                        </columns>
+                      </relation>
+                      <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page   12 Table  1' table='[&apos;Page   12 Table  1$&apos;]' type='table'>
+                        <columns gridOrigin='A1:G26:no:A1:G26:0' header='yes' outcome='2'>
+                          <column datatype='string' name='#' ordinal='0' />
+                          <column datatype='string' name='Company' ordinal='1' />
+                          <column datatype='string' name='Location #' ordinal='2' />
+                          <column datatype='string' name='Laid Off' ordinal='3' />
+                          <column datatype='string' name='Date' ordinal='4' />
+                          <column datatype='string' name='%' ordinal='5' />
+                          <column datatype='string' name='Industry' ordinal='6' />
+                        </columns>
+                      </relation>
+                      <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page   13 Table  1' table='[&apos;Page   13 Table  1$&apos;]' type='table'>
+                        <columns gridOrigin='A1:G26:no:A1:G26:0' header='yes' outcome='2'>
+                          <column datatype='string' name='#' ordinal='0' />
+                          <column datatype='string' name='Company' ordinal='1' />
+                          <column datatype='string' name='Location #' ordinal='2' />
+                          <column datatype='string' name='Laid Off' ordinal='3' />
+                          <column datatype='string' name='Date' ordinal='4' />
+                          <column datatype='string' name='%' ordinal='5' />
+                          <column datatype='string' name='Industry' ordinal='6' />
+                        </columns>
+                      </relation>
+                      <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page   14 Table  1' table='[&apos;Page   14 Table  1$&apos;]' type='table'>
+                        <columns gridOrigin='A1:G26:no:A1:G26:0' header='yes' outcome='2'>
+                          <column datatype='string' name='#' ordinal='0' />
+                          <column datatype='string' name='Company' ordinal='1' />
+                          <column datatype='string' name='Location # L' ordinal='2' />
+                          <column datatype='string' name='aid Off' ordinal='3' />
+                          <column datatype='string' name='Date' ordinal='4' />
+                          <column datatype='string' name='%' ordinal='5' />
+                          <column datatype='string' name='Industry' ordinal='6' />
+                        </columns>
+                      </relation>
+                      <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page   15 Table  1' table='[&apos;Page   15 Table  1$&apos;]' type='table'>
+                        <columns gridOrigin='A1:G26:no:A1:G26:0' header='yes' outcome='2'>
+                          <column datatype='string' name='#' ordinal='0' />
+                          <column datatype='string' name='Company' ordinal='1' />
+                          <column datatype='string' name='Location # L' ordinal='2' />
+                          <column datatype='string' name='aid Off' ordinal='3' />
+                          <column datatype='string' name='Date' ordinal='4' />
+                          <column datatype='string' name='%' ordinal='5' />
+                          <column datatype='string' name='Industry' ordinal='6' />
+                        </columns>
+                      </relation>
+                      <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page   16 Table  1' table='[&apos;Page   16 Table  1$&apos;]' type='table'>
+                        <columns gridOrigin='A1:G25:no:A1:G25:0' header='no' outcome='2'>
+                          <column datatype='string' name='F1' ordinal='0' />
+                          <column datatype='string' name='F2' ordinal='1' />
+                          <column datatype='string' name='F3' ordinal='2' />
+                          <column datatype='string' name='F4' ordinal='3' />
+                          <column datatype='string' name='F5' ordinal='4' />
+                          <column datatype='string' name='F6' ordinal='5' />
+                          <column datatype='string' name='F7' ordinal='6' />
+                        </columns>
+                      </relation>
+                      <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page   17 Table  1' table='[&apos;Page   17 Table  1$&apos;]' type='table'>
+                        <columns gridOrigin='A1:G26:no:A1:G26:0' header='yes' outcome='2'>
+                          <column datatype='string' name='#' ordinal='0' />
+                          <column datatype='string' name='Company' ordinal='1' />
+                          <column datatype='string' name='Location # La' ordinal='2' />
+                          <column datatype='string' name='id Off' ordinal='3' />
+                          <column datatype='string' name='Date' ordinal='4' />
+                          <column datatype='string' name='%' ordinal='5' />
+                          <column datatype='string' name='Industry' ordinal='6' />
+                        </columns>
+                      </relation>
+                      <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page   18 Table  1' table='[&apos;Page   18 Table  1$&apos;]' type='table'>
+                        <columns gridOrigin='A1:G25:no:A1:G25:0' header='no' outcome='2'>
+                          <column datatype='string' name='F1' ordinal='0' />
+                          <column datatype='string' name='F2' ordinal='1' />
+                          <column datatype='string' name='F3' ordinal='2' />
+                          <column datatype='string' name='F4' ordinal='3' />
+                          <column datatype='string' name='F5' ordinal='4' />
+                          <column datatype='string' name='F6' ordinal='5' />
+                          <column datatype='string' name='F7' ordinal='6' />
+                        </columns>
+                      </relation>
+                      <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page   19 Table  1' table='[&apos;Page   19 Table  1$&apos;]' type='table'>
+                        <columns gridOrigin='A1:G26:no:A1:G26:0' header='yes' outcome='2'>
+                          <column datatype='string' name='#' ordinal='0' />
+                          <column datatype='string' name='Company' ordinal='1' />
+                          <column datatype='string' name='Location # Laid' ordinal='2' />
+                          <column datatype='string' name='Off' ordinal='3' />
+                          <column datatype='string' name='Date' ordinal='4' />
+                          <column datatype='string' name='%' ordinal='5' />
+                          <column datatype='string' name='Industry' ordinal='6' />
+                        </columns>
+                      </relation>
+                      <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page   20 Table  1' table='[&apos;Page   20 Table  1$&apos;]' type='table'>
+                        <columns gridOrigin='A1:G25:no:A1:G25:0' header='no' outcome='2'>
+                          <column datatype='string' name='F1' ordinal='0' />
+                          <column datatype='string' name='F2' ordinal='1' />
+                          <column datatype='string' name='F3' ordinal='2' />
+                          <column datatype='string' name='F4' ordinal='3' />
+                          <column datatype='string' name='F5' ordinal='4' />
+                          <column datatype='string' name='F6' ordinal='5' />
+                          <column datatype='string' name='F7' ordinal='6' />
+                        </columns>
+                      </relation>
+                      <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page   21 Table  1' table='[&apos;Page   21 Table  1$&apos;]' type='table'>
+                        <columns gridOrigin='A1:G25:no:A1:G25:0' header='no' outcome='2'>
+                          <column datatype='string' name='F1' ordinal='0' />
+                          <column datatype='string' name='F2' ordinal='1' />
+                          <column datatype='string' name='F3' ordinal='2' />
+                          <column datatype='string' name='F4' ordinal='3' />
+                          <column datatype='string' name='F5' ordinal='4' />
+                          <column datatype='string' name='F6' ordinal='5' />
+                          <column datatype='string' name='F7' ordinal='6' />
+                        </columns>
+                      </relation>
+                      <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page   22 Table  1' table='[&apos;Page   22 Table  1$&apos;]' type='table'>
+                        <columns gridOrigin='A1:J6:no:A1:J6:0' header='yes' outcome='2'>
+                          <column datatype='string' name='#' ordinal='0' />
+                          <column datatype='string' name='Company' ordinal='1' />
+                          <column datatype='string' name='F3' ordinal='2' />
+                          <column datatype='string' name='Location' ordinal='3' />
+                          <column datatype='string' name='# Laid' ordinal='4' />
+                          <column datatype='string' name='Off' ordinal='5' />
+                          <column datatype='string' name='Date' ordinal='6' />
+                          <column datatype='string' name='%' ordinal='7' />
+                          <column datatype='string' name='F9' ordinal='8' />
+                          <column datatype='string' name='Industry' ordinal='9' />
+                        </columns>
+                      </relation>
+                    </relation>
+                  </relation>
+                </relation>
+              </relation>
+            </relation>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Page    1 Table  1+]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[Page    1 Table  1+]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Page    1 Table  1_E474DE29E8754D16B44B9305084E6E40]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Company &amp; Company Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Company &amp; Company Name]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>Company &amp; Company Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Page    1 Table  1_E474DE29E8754D16B44B9305084E6E40]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location, Location #, Location # L and 3 more</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Location, Location #, Location # L and 3 more]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>Location, Location #, Location # L and 3 more</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Page    1 Table  1_E474DE29E8754D16B44B9305084E6E40]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>#Laid Off, #, Laid Off and 4 more</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[#Laid Off, #, Laid Off and 4 more]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>#Laid Off, #, Laid Off and 4 more</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Page    1 Table  1_E474DE29E8754D16B44B9305084E6E40]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date &amp; Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date &amp; Date]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>Date &amp; Date</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Page    1 Table  1_E474DE29E8754D16B44B9305084E6E40]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>% &amp; %</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[% &amp; %]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>% &amp; %</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Page    1 Table  1_E474DE29E8754D16B44B9305084E6E40]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Industry &amp; Industry</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Industry &amp; Industry]</local-name>
+            <parent-name>[Project]</parent-name>
+            <remote-alias>Industry &amp; Industry</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Page    1 Table  1_E474DE29E8754D16B44B9305084E6E40]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F9</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F9]</local-name>
+            <parent-name>[Page    1 Table  1+]</parent-name>
+            <remote-alias>F9</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Page    1 Table  1_E474DE29E8754D16B44B9305084E6E40]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Name]</local-name>
+            <parent-name>[Page    1 Table  1+]</parent-name>
+            <remote-alias>Table Name</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Page    1 Table  1_E474DE29E8754D16B44B9305084E6E40]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='#Laid Off' datatype='integer' name='[#Laid Off, #, Laid Off and 4 more]' role='measure' type='quantitative' />
+      <column caption='Percentage' datatype='real' datatype-customized='true' name='[% &amp; %]' role='measure' type='quantitative' />
+      <column caption='Company' datatype='string' name='[Company &amp; Company Name]' role='dimension' type='nominal' />
+      <column caption='Date' datatype='date' name='[Date &amp; Date]' role='dimension' type='ordinal' />
+      <column datatype='string' hidden='true' name='[F1]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[F9]' role='dimension' type='nominal' />
+      <column caption='Industry' datatype='string' name='[Industry &amp; Industry]' role='dimension' type='nominal' />
+      <column caption='Location' datatype='string' name='[Location, Location #, Location # L and 3 more]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Page    1 Table  1' datatype='table' name='[__tableau_internal_object_id__].[Page    1 Table  1_E474DE29E8754D16B44B9305084E6E40]' role='measure' type='quantitative' />
+      <column-instance column='[Industry &amp; Industry]' derivation='None' name='[none:Industry &amp; Industry:nk]' pivot='key' type='nominal' />
+      <group caption='Action (Industry)' hidden='true' name='[Action (Industry)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Industry &amp; Industry]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/shrvs/Dropbox/My PC (DESKTOP-8QEN81C)/Downloads/Page    1 Table  1++ (Airtable+-+Layoffs.fyi+Tracker+(layoffs.fyi_tracker)).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='04/06/2022 12:31:02 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='Page    1 Table  1++ (Airtable+-+Layoffs.fyi+Tracker+(layoffs.fyi_tracker))' increment-value='%null%' refresh-type='create' rows-inserted='529' timestamp-start='2022-04-06 00:31:01.459' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Company &amp; Company Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Company &amp; Company Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Company &amp; Company Name</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Project</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>516</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Page    1 Table  1_E474DE29E8754D16B44B9305084E6E40]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Location, Location #, Location # L and 3 more</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Location, Location #, Location # L and 3 more]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Location, Location #, Location # L and 3 more</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Project</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>81</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Page    1 Table  1_E474DE29E8754D16B44B9305084E6E40]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>#Laid Off, #, Laid Off and 4 more</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[#Laid Off, #, Laid Off and 4 more]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>#Laid Off, #, Laid Off and 4 more</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Project</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>266</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Page    1 Table  1_E474DE29E8754D16B44B9305084E6E40]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date &amp; Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date &amp; Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date &amp; Date</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Project</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>82</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Page    1 Table  1_E474DE29E8754D16B44B9305084E6E40]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>% &amp; %</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[% &amp; %]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>% &amp; %</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Project</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>56</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Page    1 Table  1_E474DE29E8754D16B44B9305084E6E40]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Industry &amp; Industry</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Industry &amp; Industry]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Industry &amp; Industry</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Project</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Page    1 Table  1_E474DE29E8754D16B44B9305084E6E40]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Table Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Table Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Table Name</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Page    1 Table  1+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Page    1 Table  1_E474DE29E8754D16B44B9305084E6E40]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='529' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Industry &amp; Industry:nk]' palette='red_10_0' type='palette'>
+            <map to='#ae123a'>
+              <bucket>&quot;Travel&quot;</bucket>
+            </map>
+            <map to='#b5153a'>
+              <bucket>&quot;Transportati…&quot;</bucket>
+            </map>
+            <map to='#bc183a'>
+              <bucket>&quot;Support&quot;</bucket>
+            </map>
+            <map to='#c31c3b'>
+              <bucket>&quot;Security&quot;</bucket>
+            </map>
+            <map to='#ca213c'>
+              <bucket>&quot;Sales&quot;</bucket>
+            </map>
+            <map to='#d0263c'>
+              <bucket>&quot;Retail&quot;</bucket>
+            </map>
+            <map to='#d62c3e'>
+              <bucket>&quot;Recruiting&quot;</bucket>
+            </map>
+            <map to='#db333f'>
+              <bucket>&quot;Real Estate&quot;</bucket>
+            </map>
+            <map to='#e03941'>
+              <bucket>&quot;Product&quot;</bucket>
+            </map>
+            <map to='#e54144'>
+              <bucket>&quot;Other&quot;</bucket>
+            </map>
+            <map to='#e94846'>
+              <bucket>&quot;Media&quot;</bucket>
+            </map>
+            <map to='#ec5149'>
+              <bucket>&quot;Marketing&quot;</bucket>
+            </map>
+            <map to='#ef594c'>
+              <bucket>&quot;Logistics&quot;</bucket>
+            </map>
+            <map to='#f26250'>
+              <bucket>&quot;Legal&quot;</bucket>
+            </map>
+            <map to='#f36956'>
+              <bucket>&quot;Infrastructure&quot;</bucket>
+            </map>
+            <map to='#f5705d'>
+              <bucket>&quot;HR&quot;</bucket>
+            </map>
+            <map to='#f67863'>
+              <bucket>&quot;Healthcare&quot;</bucket>
+            </map>
+            <map to='#f87f69'>
+              <bucket>&quot;Food&quot;</bucket>
+            </map>
+            <map to='#f9876f'>
+              <bucket>&quot;Fitness&quot;</bucket>
+            </map>
+            <map to='#fa8e77'>
+              <bucket>&quot;Finance&quot;</bucket>
+            </map>
+            <map to='#fb9580'>
+              <bucket>&quot;Energy&quot;</bucket>
+            </map>
+            <map to='#fc9c88'>
+              <bucket>&quot;Education&quot;</bucket>
+            </map>
+            <map to='#fca291'>
+              <bucket>&quot;Data&quot;</bucket>
+            </map>
+            <map to='#fda999'>
+              <bucket>&quot;Consumer&quot;</bucket>
+            </map>
+            <map to='#feb0a1'>
+              <bucket>&quot;Construction&quot;</bucket>
+            </map>
+            <map to='#feb7a9'>
+              <bucket>&quot;Aerospace&quot;</bucket>
+            </map>
+            <map to='#ffbeb2'>
+              <bucket>%null%</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <filter class='categorical' column='[Company &amp; Company Name]' filter-group='2'>
+        <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+          <groupfilter function='level-members' level='[Company &amp; Company Name]' />
+          <groupfilter function='member' level='[Company &amp; Company Name]' member='&quot;UNIQUE&quot;' />
+        </groupfilter>
+      </filter>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Page    1 Table  1' id='Page    1 Table  1_E474DE29E8754D16B44B9305084E6E40'>
+            <properties context=''>
+              <relation type='project'>
+                <columns>
+                  <column caption='Company Name' hidden='true' name='[Page    1 Table  1+].[F2]' />
+                  <column caption='Company' hidden='true' name='[Page    1 Table  1+].[Company]' />
+                  <column name='[Project].[Company &amp; Company Name]' project-type='coalesce' />
+                </columns>
+                <bindings>
+                  <binding expression='IF NOT ISNULL([Page    1 Table  1+].[F2]) THEN [Page    1 Table  1+].[F2]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[Company]) THEN [Page    1 Table  1+].[Company]&#10;ELSE NULL&#10;END' name='[Project].[Company &amp; Company Name]' />
+                </bindings>
+                <relation type='project'>
+                  <columns>
+                    <column caption='Location' hidden='true' name='[Page    1 Table  1+].[F3]' />
+                    <column caption='Location #' hidden='true' name='[Page    1 Table  1+].[Location #]' />
+                    <column caption='Location # L' hidden='true' name='[Page    1 Table  1+].[Location # L]' />
+                    <column caption='Location # La' hidden='true' name='[Page    1 Table  1+].[Location # La]' />
+                    <column caption='Location # Laid' hidden='true' name='[Page    1 Table  1+].[Location # Laid]' />
+                    <column caption='Location' hidden='true' name='[Page    1 Table  1+].[Location]' />
+                    <column name='[Project].[Location, Location #, Location # L and 3 more]' project-type='coalesce' />
+                  </columns>
+                  <bindings>
+                    <binding expression='IF NOT ISNULL([Page    1 Table  1+].[F3]) THEN [Page    1 Table  1+].[F3]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[Location #]) THEN [Page    1 Table  1+].[Location #]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[Location # L]) THEN [Page    1 Table  1+].[Location # L]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[Location # La]) THEN [Page    1 Table  1+].[Location # La]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[Location # Laid]) THEN [Page    1 Table  1+].[Location # Laid]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[Location]) THEN [Page    1 Table  1+].[Location]&#10;ELSE NULL&#10;END' name='[Project].[Location, Location #, Location # L and 3 more]' />
+                  </bindings>
+                  <relation type='project'>
+                    <columns>
+                      <column caption='#Laid Off' hidden='true' name='[Page    1 Table  1+].[F4]' />
+                      <column caption='#' hidden='true' name='[Page    1 Table  1+].[#]' />
+                      <column caption='Laid Off' hidden='true' name='[Page    1 Table  1+].[Laid Off]' />
+                      <column caption='aid Off' hidden='true' name='[Page    1 Table  1+].[aid Off]' />
+                      <column caption='id Off' hidden='true' name='[Page    1 Table  1+].[id Off]' />
+                      <column caption='Off' hidden='true' name='[Page    1 Table  1+].[Off]' />
+                      <column caption='# Laid' hidden='true' name='[Page    1 Table  1+].[# Laid]' />
+                      <column name='[Project].[#Laid Off, #, Laid Off and 4 more]' project-type='coalesce' />
+                      <column datatype='integer' name='#Laid Off, #, Laid Off and 4 more' ordinal='3' />
+                    </columns>
+                    <bindings>
+                      <binding expression='IF NOT ISNULL([Page    1 Table  1+].[F4]) THEN [Page    1 Table  1+].[F4]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[#]) THEN [Page    1 Table  1+].[#]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[Laid Off]) THEN [Page    1 Table  1+].[Laid Off]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[aid Off]) THEN [Page    1 Table  1+].[aid Off]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[id Off]) THEN [Page    1 Table  1+].[id Off]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[Off]) THEN [Page    1 Table  1+].[Off]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[# Laid]) THEN [Page    1 Table  1+].[# Laid]&#10;ELSE NULL&#10;END' name='[Project].[#Laid Off, #, Laid Off and 4 more]' />
+                    </bindings>
+                    <relation type='project'>
+                      <columns>
+                        <column caption='Date' hidden='true' name='[Page    1 Table  1+].[F5]' />
+                        <column caption='Date' hidden='true' name='[Page    1 Table  1+].[Date]' />
+                        <column name='[Project].[Date &amp; Date]' project-type='coalesce' />
+                        <column datatype='date' date-parse-format='MM/dd/yyyy' name='Date &amp; Date' ordinal='4' />
+                      </columns>
+                      <bindings>
+                        <binding expression='IF NOT ISNULL([Page    1 Table  1+].[F5]) THEN [Page    1 Table  1+].[F5]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[Date]) THEN [Page    1 Table  1+].[Date]&#10;ELSE NULL&#10;END' name='[Project].[Date &amp; Date]' />
+                      </bindings>
+                      <relation type='project'>
+                        <columns>
+                          <column caption='%' hidden='true' name='[Page    1 Table  1+].[F6]' />
+                          <column caption='%' hidden='true' name='[Page    1 Table  1+].[%]' />
+                          <column name='[Project].[% &amp; %]' project-type='coalesce' />
+                          <column datatype='real' name='% &amp; %' ordinal='5' />
+                        </columns>
+                        <bindings>
+                          <binding expression='IF NOT ISNULL([Page    1 Table  1+].[F6]) THEN [Page    1 Table  1+].[F6]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[%]) THEN [Page    1 Table  1+].[%]&#10;ELSE NULL&#10;END' name='[Project].[% &amp; %]' />
+                        </bindings>
+                        <relation type='project'>
+                          <columns>
+                            <column caption='Industry' hidden='true' name='[Page    1 Table  1+].[F7]' />
+                            <column caption='Industry' hidden='true' name='[Page    1 Table  1+].[Industry]' />
+                            <column name='[Project].[Industry &amp; Industry]' project-type='coalesce' />
+                          </columns>
+                          <bindings>
+                            <binding expression='IF NOT ISNULL([Page    1 Table  1+].[F7]) THEN [Page    1 Table  1+].[F7]&#10;ELSEIF NOT ISNULL([Page    1 Table  1+].[Industry]) THEN [Page    1 Table  1+].[Industry]&#10;ELSE NULL&#10;END' name='[Project].[Industry &amp; Industry]' />
+                          </bindings>
+                          <relation all='true' name='Page    1 Table  1+' type='union'>
+                            <columns>
+                              <column datatype='string' name='F1' />
+                              <column datatype='string' name='F2' />
+                              <column datatype='string' name='F3' />
+                              <column datatype='string' name='F4' />
+                              <column datatype='string' name='F5' />
+                              <column datatype='string' name='F6' />
+                              <column datatype='string' name='F7' />
+                              <column datatype='string' name='#' />
+                              <column datatype='string' name='Company' />
+                              <column datatype='string' name='Location #' />
+                              <column datatype='string' name='Laid Off' />
+                              <column datatype='string' name='Date' />
+                              <column datatype='string' name='%' />
+                              <column datatype='string' name='Industry' />
+                              <column datatype='string' name='Location # L' />
+                              <column datatype='string' name='aid Off' />
+                              <column datatype='string' name='Location # La' />
+                              <column datatype='string' name='id Off' />
+                              <column datatype='string' name='Location # Laid' />
+                              <column datatype='string' name='Off' />
+                              <column datatype='string' name='Location' />
+                              <column datatype='string' name='# Laid' />
+                              <column datatype='string' name='F9' />
+                              <column datatype='string' name='Table Name' />
+                            </columns>
+                            <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page    1 Table  1' table='[&apos;Page    1 Table  1$&apos;]' type='table'>
+                              <columns gridOrigin='A1:G24:no:A1:G24:0' header='no' outcome='2'>
+                                <column datatype='string' name='F1' ordinal='0' />
+                                <column datatype='string' name='F2' ordinal='1' />
+                                <column datatype='string' name='F3' ordinal='2' />
+                                <column datatype='string' name='F4' ordinal='3' />
+                                <column datatype='string' name='F5' ordinal='4' />
+                                <column datatype='string' name='F6' ordinal='5' />
+                                <column datatype='string' name='F7' ordinal='6' />
+                              </columns>
+                            </relation>
+                            <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page    2 Table  1' table='[&apos;Page    2 Table  1$&apos;]' type='table'>
+                              <columns gridOrigin='A1:G25:no:A1:G25:0' header='no' outcome='2'>
+                                <column datatype='string' name='F1' ordinal='0' />
+                                <column datatype='string' name='F2' ordinal='1' />
+                                <column datatype='string' name='F3' ordinal='2' />
+                                <column datatype='string' name='F4' ordinal='3' />
+                                <column datatype='string' name='F5' ordinal='4' />
+                                <column datatype='string' name='F6' ordinal='5' />
+                                <column datatype='string' name='F7' ordinal='6' />
+                              </columns>
+                            </relation>
+                            <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page    3 Table  1' table='[&apos;Page    3 Table  1$&apos;]' type='table'>
+                              <columns gridOrigin='A1:G25:no:A1:G25:0' header='no' outcome='2'>
+                                <column datatype='string' name='F1' ordinal='0' />
+                                <column datatype='string' name='F2' ordinal='1' />
+                                <column datatype='string' name='F3' ordinal='2' />
+                                <column datatype='string' name='F4' ordinal='3' />
+                                <column datatype='string' name='F5' ordinal='4' />
+                                <column datatype='string' name='F6' ordinal='5' />
+                                <column datatype='string' name='F7' ordinal='6' />
+                              </columns>
+                            </relation>
+                            <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page    4 Table  1' table='[&apos;Page    4 Table  1$&apos;]' type='table'>
+                              <columns gridOrigin='A1:G25:no:A1:G25:0' header='no' outcome='2'>
+                                <column datatype='string' name='F1' ordinal='0' />
+                                <column datatype='string' name='F2' ordinal='1' />
+                                <column datatype='string' name='F3' ordinal='2' />
+                                <column datatype='string' name='F4' ordinal='3' />
+                                <column datatype='string' name='F5' ordinal='4' />
+                                <column datatype='string' name='F6' ordinal='5' />
+                                <column datatype='string' name='F7' ordinal='6' />
+                              </columns>
+                            </relation>
+                            <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page    5 Table  1' table='[&apos;Page    5 Table  1$&apos;]' type='table'>
+                              <columns gridOrigin='A1:G25:no:A1:G25:0' header='no' outcome='2'>
+                                <column datatype='string' name='F1' ordinal='0' />
+                                <column datatype='string' name='F2' ordinal='1' />
+                                <column datatype='string' name='F3' ordinal='2' />
+                                <column datatype='string' name='F4' ordinal='3' />
+                                <column datatype='string' name='F5' ordinal='4' />
+                                <column datatype='string' name='F6' ordinal='5' />
+                                <column datatype='string' name='F7' ordinal='6' />
+                              </columns>
+                            </relation>
+                            <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page    6 Table  1' table='[&apos;Page    6 Table  1$&apos;]' type='table'>
+                              <columns gridOrigin='A1:G25:no:A1:G25:0' header='no' outcome='2'>
+                                <column datatype='string' name='F1' ordinal='0' />
+                                <column datatype='string' name='F2' ordinal='1' />
+                                <column datatype='string' name='F3' ordinal='2' />
+                                <column datatype='string' name='F4' ordinal='3' />
+                                <column datatype='string' name='F5' ordinal='4' />
+                                <column datatype='string' name='F6' ordinal='5' />
+                                <column datatype='string' name='F7' ordinal='6' />
+                              </columns>
+                            </relation>
+                            <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page    7 Table  1' table='[&apos;Page    7 Table  1$&apos;]' type='table'>
+                              <columns gridOrigin='A1:G25:no:A1:G25:0' header='no' outcome='2'>
+                                <column datatype='string' name='F1' ordinal='0' />
+                                <column datatype='string' name='F2' ordinal='1' />
+                                <column datatype='string' name='F3' ordinal='2' />
+                                <column datatype='string' name='F4' ordinal='3' />
+                                <column datatype='string' name='F5' ordinal='4' />
+                                <column datatype='string' name='F6' ordinal='5' />
+                                <column datatype='string' name='F7' ordinal='6' />
+                              </columns>
+                            </relation>
+                            <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page    8 Table  1' table='[&apos;Page    8 Table  1$&apos;]' type='table'>
+                              <columns gridOrigin='A1:G25:no:A1:G25:0' header='no' outcome='2'>
+                                <column datatype='string' name='F1' ordinal='0' />
+                                <column datatype='string' name='F2' ordinal='1' />
+                                <column datatype='string' name='F3' ordinal='2' />
+                                <column datatype='string' name='F4' ordinal='3' />
+                                <column datatype='string' name='F5' ordinal='4' />
+                                <column datatype='string' name='F6' ordinal='5' />
+                                <column datatype='string' name='F7' ordinal='6' />
+                              </columns>
+                            </relation>
+                            <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page    9 Table  1' table='[&apos;Page    9 Table  1$&apos;]' type='table'>
+                              <columns gridOrigin='A1:G25:no:A1:G25:0' header='no' outcome='2'>
+                                <column datatype='string' name='F1' ordinal='0' />
+                                <column datatype='string' name='F2' ordinal='1' />
+                                <column datatype='string' name='F3' ordinal='2' />
+                                <column datatype='string' name='F4' ordinal='3' />
+                                <column datatype='string' name='F5' ordinal='4' />
+                                <column datatype='string' name='F6' ordinal='5' />
+                                <column datatype='string' name='F7' ordinal='6' />
+                              </columns>
+                            </relation>
+                            <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page   10 Table  1' table='[&apos;Page   10 Table  1$&apos;]' type='table'>
+                              <columns gridOrigin='A1:G25:no:A1:G25:0' header='no' outcome='2'>
+                                <column datatype='string' name='F1' ordinal='0' />
+                                <column datatype='string' name='F2' ordinal='1' />
+                                <column datatype='string' name='F3' ordinal='2' />
+                                <column datatype='string' name='F4' ordinal='3' />
+                                <column datatype='string' name='F5' ordinal='4' />
+                                <column datatype='string' name='F6' ordinal='5' />
+                                <column datatype='string' name='F7' ordinal='6' />
+                              </columns>
+                            </relation>
+                            <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page   11 Table  1' table='[&apos;Page   11 Table  1$&apos;]' type='table'>
+                              <columns gridOrigin='A1:G25:no:A1:G25:0' header='no' outcome='2'>
+                                <column datatype='string' name='F1' ordinal='0' />
+                                <column datatype='string' name='F2' ordinal='1' />
+                                <column datatype='string' name='F3' ordinal='2' />
+                                <column datatype='string' name='F4' ordinal='3' />
+                                <column datatype='string' name='F5' ordinal='4' />
+                                <column datatype='string' name='F6' ordinal='5' />
+                                <column datatype='string' name='F7' ordinal='6' />
+                              </columns>
+                            </relation>
+                            <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page   12 Table  1' table='[&apos;Page   12 Table  1$&apos;]' type='table'>
+                              <columns gridOrigin='A1:G26:no:A1:G26:0' header='yes' outcome='2'>
+                                <column datatype='string' name='#' ordinal='0' />
+                                <column datatype='string' name='Company' ordinal='1' />
+                                <column datatype='string' name='Location #' ordinal='2' />
+                                <column datatype='string' name='Laid Off' ordinal='3' />
+                                <column datatype='string' name='Date' ordinal='4' />
+                                <column datatype='string' name='%' ordinal='5' />
+                                <column datatype='string' name='Industry' ordinal='6' />
+                              </columns>
+                            </relation>
+                            <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page   13 Table  1' table='[&apos;Page   13 Table  1$&apos;]' type='table'>
+                              <columns gridOrigin='A1:G26:no:A1:G26:0' header='yes' outcome='2'>
+                                <column datatype='string' name='#' ordinal='0' />
+                                <column datatype='string' name='Company' ordinal='1' />
+                                <column datatype='string' name='Location #' ordinal='2' />
+                                <column datatype='string' name='Laid Off' ordinal='3' />
+                                <column datatype='string' name='Date' ordinal='4' />
+                                <column datatype='string' name='%' ordinal='5' />
+                                <column datatype='string' name='Industry' ordinal='6' />
+                              </columns>
+                            </relation>
+                            <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page   14 Table  1' table='[&apos;Page   14 Table  1$&apos;]' type='table'>
+                              <columns gridOrigin='A1:G26:no:A1:G26:0' header='yes' outcome='2'>
+                                <column datatype='string' name='#' ordinal='0' />
+                                <column datatype='string' name='Company' ordinal='1' />
+                                <column datatype='string' name='Location # L' ordinal='2' />
+                                <column datatype='string' name='aid Off' ordinal='3' />
+                                <column datatype='string' name='Date' ordinal='4' />
+                                <column datatype='string' name='%' ordinal='5' />
+                                <column datatype='string' name='Industry' ordinal='6' />
+                              </columns>
+                            </relation>
+                            <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page   15 Table  1' table='[&apos;Page   15 Table  1$&apos;]' type='table'>
+                              <columns gridOrigin='A1:G26:no:A1:G26:0' header='yes' outcome='2'>
+                                <column datatype='string' name='#' ordinal='0' />
+                                <column datatype='string' name='Company' ordinal='1' />
+                                <column datatype='string' name='Location # L' ordinal='2' />
+                                <column datatype='string' name='aid Off' ordinal='3' />
+                                <column datatype='string' name='Date' ordinal='4' />
+                                <column datatype='string' name='%' ordinal='5' />
+                                <column datatype='string' name='Industry' ordinal='6' />
+                              </columns>
+                            </relation>
+                            <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page   16 Table  1' table='[&apos;Page   16 Table  1$&apos;]' type='table'>
+                              <columns gridOrigin='A1:G25:no:A1:G25:0' header='no' outcome='2'>
+                                <column datatype='string' name='F1' ordinal='0' />
+                                <column datatype='string' name='F2' ordinal='1' />
+                                <column datatype='string' name='F3' ordinal='2' />
+                                <column datatype='string' name='F4' ordinal='3' />
+                                <column datatype='string' name='F5' ordinal='4' />
+                                <column datatype='string' name='F6' ordinal='5' />
+                                <column datatype='string' name='F7' ordinal='6' />
+                              </columns>
+                            </relation>
+                            <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page   17 Table  1' table='[&apos;Page   17 Table  1$&apos;]' type='table'>
+                              <columns gridOrigin='A1:G26:no:A1:G26:0' header='yes' outcome='2'>
+                                <column datatype='string' name='#' ordinal='0' />
+                                <column datatype='string' name='Company' ordinal='1' />
+                                <column datatype='string' name='Location # La' ordinal='2' />
+                                <column datatype='string' name='id Off' ordinal='3' />
+                                <column datatype='string' name='Date' ordinal='4' />
+                                <column datatype='string' name='%' ordinal='5' />
+                                <column datatype='string' name='Industry' ordinal='6' />
+                              </columns>
+                            </relation>
+                            <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page   18 Table  1' table='[&apos;Page   18 Table  1$&apos;]' type='table'>
+                              <columns gridOrigin='A1:G25:no:A1:G25:0' header='no' outcome='2'>
+                                <column datatype='string' name='F1' ordinal='0' />
+                                <column datatype='string' name='F2' ordinal='1' />
+                                <column datatype='string' name='F3' ordinal='2' />
+                                <column datatype='string' name='F4' ordinal='3' />
+                                <column datatype='string' name='F5' ordinal='4' />
+                                <column datatype='string' name='F6' ordinal='5' />
+                                <column datatype='string' name='F7' ordinal='6' />
+                              </columns>
+                            </relation>
+                            <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page   19 Table  1' table='[&apos;Page   19 Table  1$&apos;]' type='table'>
+                              <columns gridOrigin='A1:G26:no:A1:G26:0' header='yes' outcome='2'>
+                                <column datatype='string' name='#' ordinal='0' />
+                                <column datatype='string' name='Company' ordinal='1' />
+                                <column datatype='string' name='Location # Laid' ordinal='2' />
+                                <column datatype='string' name='Off' ordinal='3' />
+                                <column datatype='string' name='Date' ordinal='4' />
+                                <column datatype='string' name='%' ordinal='5' />
+                                <column datatype='string' name='Industry' ordinal='6' />
+                              </columns>
+                            </relation>
+                            <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page   20 Table  1' table='[&apos;Page   20 Table  1$&apos;]' type='table'>
+                              <columns gridOrigin='A1:G25:no:A1:G25:0' header='no' outcome='2'>
+                                <column datatype='string' name='F1' ordinal='0' />
+                                <column datatype='string' name='F2' ordinal='1' />
+                                <column datatype='string' name='F3' ordinal='2' />
+                                <column datatype='string' name='F4' ordinal='3' />
+                                <column datatype='string' name='F5' ordinal='4' />
+                                <column datatype='string' name='F6' ordinal='5' />
+                                <column datatype='string' name='F7' ordinal='6' />
+                              </columns>
+                            </relation>
+                            <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page   21 Table  1' table='[&apos;Page   21 Table  1$&apos;]' type='table'>
+                              <columns gridOrigin='A1:G25:no:A1:G25:0' header='no' outcome='2'>
+                                <column datatype='string' name='F1' ordinal='0' />
+                                <column datatype='string' name='F2' ordinal='1' />
+                                <column datatype='string' name='F3' ordinal='2' />
+                                <column datatype='string' name='F4' ordinal='3' />
+                                <column datatype='string' name='F5' ordinal='4' />
+                                <column datatype='string' name='F6' ordinal='5' />
+                                <column datatype='string' name='F7' ordinal='6' />
+                              </columns>
+                            </relation>
+                            <relation connection='pdf.08zyasv0imz0te1cgod2y0qt4ndn' name='Page   22 Table  1' table='[&apos;Page   22 Table  1$&apos;]' type='table'>
+                              <columns gridOrigin='A1:J6:no:A1:J6:0' header='yes' outcome='2'>
+                                <column datatype='string' name='#' ordinal='0' />
+                                <column datatype='string' name='Company' ordinal='1' />
+                                <column datatype='string' name='F3' ordinal='2' />
+                                <column datatype='string' name='Location' ordinal='3' />
+                                <column datatype='string' name='# Laid' ordinal='4' />
+                                <column datatype='string' name='Off' ordinal='5' />
+                                <column datatype='string' name='Date' ordinal='6' />
+                                <column datatype='string' name='%' ordinal='7' />
+                                <column datatype='string' name='F9' ordinal='8' />
+                                <column datatype='string' name='Industry' ordinal='9' />
+                              </columns>
+                            </relation>
+                          </relation>
+                        </relation>
+                      </relation>
+                    </relation>
+                  </relation>
+                </relation>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_77BB568C102743B8B75FB36D37883C21]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Treemap Industry layoffs' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Company Date'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Daily Company Layoffs&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Page    1 Table  1++ (Airtable+-+Layoffs.fyi+Tracker+(layoffs.fyi_tracker))' name='federated.02ygv7u05gi9bh16rjnrz1sbzbfw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02ygv7u05gi9bh16rjnrz1sbzbfw'>
+            <column caption='#Laid Off' datatype='integer' name='[#Laid Off, #, Laid Off and 4 more]' role='measure' type='quantitative' />
+            <column caption='Percentage' datatype='real' datatype-customized='true' name='[% &amp; %]' role='measure' type='quantitative' />
+            <column caption='Company' datatype='string' name='[Company &amp; Company Name]' role='dimension' type='nominal' />
+            <column caption='Date' datatype='date' name='[Date &amp; Date]' role='dimension' type='ordinal' />
+            <column caption='Industry' datatype='string' name='[Industry &amp; Industry]' role='dimension' type='nominal' />
+            <column-instance column='[Company &amp; Company Name]' derivation='None' name='[none:Company &amp; Company Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[#Laid Off, #, Laid Off and 4 more]' derivation='Sum' name='[sum:#Laid Off, #, Laid Off and 4 more:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[% &amp; %]' derivation='Sum' name='[sum:% &amp; %:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date &amp; Date]' derivation='Day-Trunc' name='[tdy:Date &amp; Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[Action (Industry)]'>
+            <groupfilter function='level-members' level='[Industry &amp; Industry]' user:ui-action-filter='[Action1_77BB568C102743B8B75FB36D37883C21]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[Action (Industry)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[tdy:Date &amp; Date:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[none:Company &amp; Company Name:nk]' value='false' />
+            <format attr='text-format' field='[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[sum:% &amp; %:qk]' value='p0%' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[sum:#Laid Off, #, Laid Off and 4 more:qk]' palette='red_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[sum:#Laid Off, #, Laid Off and 4 more:qk]' />
+              <size column='[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[sum:#Laid Off, #, Laid Off and 4 more:qk]' />
+              <lod column='[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[sum:% &amp; %:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='14.547999382019043' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[none:Company &amp; Company Name:nk]</rows>
+        <cols>[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[tdy:Date &amp; Date:qk]</cols>
+      </table>
+      <simple-id uuid='{A632AD12-9649-4440-A136-8AFA62024740}' />
+    </worksheet>
+    <worksheet name='Layoff Trend of Industry'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Page    1 Table  1++ (Airtable+-+Layoffs.fyi+Tracker+(layoffs.fyi_tracker))' name='federated.02ygv7u05gi9bh16rjnrz1sbzbfw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02ygv7u05gi9bh16rjnrz1sbzbfw'>
+            <column caption='#Laid Off' datatype='integer' name='[#Laid Off, #, Laid Off and 4 more]' role='measure' type='quantitative' />
+            <column caption='Date' datatype='date' name='[Date &amp; Date]' role='dimension' type='ordinal' />
+            <column caption='Industry' datatype='string' name='[Industry &amp; Industry]' role='dimension' type='nominal' />
+            <column-instance column='[#Laid Off, #, Laid Off and 4 more]' derivation='Sum' name='[cum:sum:#Laid Off, #, Laid Off and 4 more:qk:1]' pivot='key' type='quantitative'>
+              <table-calc aggregation='Sum' ordering-field='[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[tdy:Date &amp; Date:qk]' ordering-type='Field' type='CumTotal' />
+            </column-instance>
+            <column-instance column='[Industry &amp; Industry]' derivation='None' name='[none:Industry &amp; Industry:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Date &amp; Date]' derivation='Day-Trunc' name='[tdy:Date &amp; Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[Action (Industry)]'>
+            <groupfilter function='level-members' level='[Industry &amp; Industry]' user:ui-action-filter='[Action1_77BB568C102743B8B75FB36D37883C21]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[Action (Industry)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[cum:sum:#Laid Off, #, Laid Off and 4 more:qk:1]' scope='rows' value='false' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+            <format attr='display' class='0' field='[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[tdy:Date &amp; Date:qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[none:Industry &amp; Industry:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[cum:sum:#Laid Off, #, Laid Off and 4 more:qk:1]</rows>
+        <cols>[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[tdy:Date &amp; Date:qk]</cols>
+      </table>
+      <simple-id uuid='{7141E4C1-E1B6-4718-BFA4-D9251E44B961}' />
+    </worksheet>
+    <worksheet name='Top 10 companies - layoff'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Top 10 layoffs&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Page    1 Table  1++ (Airtable+-+Layoffs.fyi+Tracker+(layoffs.fyi_tracker))' name='federated.02ygv7u05gi9bh16rjnrz1sbzbfw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02ygv7u05gi9bh16rjnrz1sbzbfw'>
+            <column caption='#Laid Off' datatype='integer' name='[#Laid Off, #, Laid Off and 4 more]' role='measure' type='quantitative' />
+            <column caption='Company' datatype='string' name='[Company &amp; Company Name]' role='dimension' type='nominal' />
+            <column caption='Industry' datatype='string' name='[Industry &amp; Industry]' role='dimension' type='nominal' />
+            <column-instance column='[Company &amp; Company Name]' derivation='None' name='[none:Company &amp; Company Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[#Laid Off, #, Laid Off and 4 more]' derivation='Sum' name='[sum:#Laid Off, #, Laid Off and 4 more:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[Action (Industry)]'>
+            <groupfilter function='level-members' level='[Industry &amp; Industry]' user:ui-action-filter='[Action1_77BB568C102743B8B75FB36D37883C21]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[none:Company &amp; Company Name:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([#Laid Off, #, Laid Off and 4 more])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Company &amp; Company Name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[none:Company &amp; Company Name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[sum:#Laid Off, #, Laid Off and 4 more:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[none:Company &amp; Company Name:nk]</column>
+            <column>[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[Action (Industry)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[sum:#Laid Off, #, Laid Off and 4 more:qk]' scope='cols' value='false' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='tick-color' scope='rows' value='#00000000' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='tick-color' scope='cols' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='20' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[sum:#Laid Off, #, Laid Off and 4 more:qk]' palette='red_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[sum:#Laid Off, #, Laid Off and 4 more:qk]' />
+              <text column='[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[sum:#Laid Off, #, Laid Off and 4 more:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#e15759' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[none:Company &amp; Company Name:nk]</rows>
+        <cols>[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[sum:#Laid Off, #, Laid Off and 4 more:qk]</cols>
+      </table>
+      <simple-id uuid='{A22148C0-6065-4EDB-9D34-522EE7A04168}' />
+    </worksheet>
+    <worksheet name='Treemap Industry layoffs'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Page    1 Table  1++ (Airtable+-+Layoffs.fyi+Tracker+(layoffs.fyi_tracker))' name='federated.02ygv7u05gi9bh16rjnrz1sbzbfw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02ygv7u05gi9bh16rjnrz1sbzbfw'>
+            <column caption='#Laid Off' datatype='integer' name='[#Laid Off, #, Laid Off and 4 more]' role='measure' type='quantitative' />
+            <column caption='Percentage' datatype='real' datatype-customized='true' name='[% &amp; %]' role='measure' type='quantitative' />
+            <column caption='Industry' datatype='string' name='[Industry &amp; Industry]' role='dimension' type='nominal' />
+            <column-instance column='[% &amp; %]' derivation='Avg' name='[avg:% &amp; %:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Industry &amp; Industry]' derivation='None' name='[none:Industry &amp; Industry:nk]' pivot='key' type='nominal' />
+            <column-instance column='[#Laid Off, #, Laid Off and 4 more]' derivation='Sum' name='[sum:#Laid Off, #, Laid Off and 4 more:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[avg:% &amp; %:qk]' value='p0%' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[sum:#Laid Off, #, Laid Off and 4 more:qk]' palette='red_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[sum:#Laid Off, #, Laid Off and 4 more:qk]' />
+              <color column='[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[sum:#Laid Off, #, Laid Off and 4 more:qk]' />
+              <text column='[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[none:Industry &amp; Industry:nk]' />
+              <text column='[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[avg:% &amp; %:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{064C2477-D01E-42F2-A726-0A5260A746B4}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98044' id='8' param='horz' type-v2='layout-flow' w='99002' x='499' y='978'>
+            <zone h='98044' id='6' type-v2='layout-basic' w='99002' x='499' y='978'>
+              <zone h='26038' id='3' name='Layoff Trend of Industry' show-title='false' w='99002' x='499' y='978'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='47495' id='5' name='Treemap Industry layoffs' w='69949' x='499' y='27016'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='24511' id='10' name='Company Date' w='99002' x='499' y='74511'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='47495' id='11' name='Top 10 companies - layoff' w='29053' x='70448' y='27016'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='6724' id='9' name='Treemap Industry layoffs' pane-specification-id='0' param='[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[sum:#Laid Off, #, Laid Off and 4 more:qk]' show-title='false' type-v2='color' w='10162' x='24564' y='27384' />
+        <zone h='11736' id='12' type-v2='text' w='29613' x='64214' y='14181'>
+          <formatted-text>
+            <run fontcolor='#e6e6e6' fontname='Tableau Bold' fontsize='16'>Layoffs during Covid 19 Period</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1150' minheight='1150' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='14' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98044' id='13' param='vert' type-v2='layout-flow' w='99002' x='499' y='978'>
+                <zone fixed-size='200' h='26038' id='3' is-fixed='true' name='Layoff Trend of Industry' show-title='false' w='99002' x='499' y='978'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='11736' id='12' type-v2='text' w='29613' x='64214' y='14181'>
+                  <formatted-text>
+                    <run fontcolor='#e6e6e6' fontname='Tableau Bold' fontsize='16'>Layoffs during Covid 19 Period</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='47495' id='5' is-fixed='true' name='Treemap Industry layoffs' w='69949' x='499' y='27016'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6724' id='9' name='Treemap Industry layoffs' pane-specification-id='0' param='[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[sum:#Laid Off, #, Laid Off and 4 more:qk]' show-title='false' type-v2='color' w='10162' x='24564' y='27384'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='47495' id='11' is-fixed='true' name='Top 10 companies - layoff' w='29053' x='70448' y='27016'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='188' h='24511' id='10' is-fixed='true' name='Company Date' w='99002' x='499' y='74511'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{D7A9931C-57A8-414A-A5E5-323365FD2BFD}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' name='Layoff Trend of Industry'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='horizontal'>
+              <node-reference>
+                <axis>[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[tdy:Date &amp; Date:qk]</axis>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[none:Industry &amp; Industry:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D97CCF3C-5E44-4ACB-B29B-B0D8DDB54807}' />
+    </window>
+    <window class='worksheet' name='Top 10 companies - layoff'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[sum:#Laid Off, #, Laid Off and 4 more:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[none:Company &amp; Company Name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{24CF4F3F-EB09-4DE1-9366-8B8CD33EB32E}' />
+    </window>
+    <window class='worksheet' name='Company Date'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[sum:#Laid Off, #, Laid Off and 4 more:qk]' type='color' />
+            <card pane-specification-id='0' param='[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[sum:#Laid Off, #, Laid Off and 4 more:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[none:Company &amp; Company Name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E86D2C80-C7ED-4EBC-AEA4-10A7646840CD}' />
+    </window>
+    <window class='worksheet' name='Treemap Industry layoffs'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[sum:#Laid Off, #, Laid Off and 4 more:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.02ygv7u05gi9bh16rjnrz1sbzbfw].[none:Industry &amp; Industry:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D48D30B1-FB14-49C7-BEC3-90CD0D4D44FE}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Company Date'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Layoff Trend of Industry'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Top 10 companies - layoff'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Treemap Industry layoffs'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{A0B2F409-AD22-4776-A8B8-716BA8D987D9}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Company Date' width='192'>
+      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
+      AAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Layoff Trend of Industry' width='192'>
+      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
+      gg==
+    </thumbnail>
+    <thumbnail height='192' name='Top 10 companies - layoff' width='192'>
+      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
+      SUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Treemap Industry layoffs' width='192'>
+      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
+      TkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
